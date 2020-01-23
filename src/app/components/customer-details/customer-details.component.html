@@ -1,0 +1,41 @@
+<app-page-header [headerTitle]='headerTitle' [headerIcon]='headerIcon' [headerDescription]='headerDescription'>
+</app-page-header>
+
+<div class="row">
+  <div class="col-12">
+    <p>
+      <a href="" class="btn btn-secondary" routerLink="/customers">
+        <i class="fas fa-reply mr-2"></i> Back
+      </a>
+    </p>
+
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <th>First Name</th>
+          <td>{{ customer.firstName }}</td>
+        </tr>
+        <tr>
+          <th>Last Name</th>
+          <td>{{ customer.lastName }}</td>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <td>{{ customer.email }}</td>
+        </tr>
+        <tr>
+          <th>Phone</th>
+          <td>{{ customer.phone }}</td>
+        </tr>
+        <tr>
+          <th>Address</th>
+          <td>{{ customer.address }}</td>
+        </tr>
+        <tr>
+          <th>Notes</th>
+          <td>{{ customer.notes }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<header>
+  <app-topnav [isLogin]="isLogin" [userEmail]="userEmail"></app-topnav>
+</header>
+<main>
+  <div class="container-fluid mt-5">
+    <div class="row">
+      <div class="col-2 p-0">
+        <app-sidenav [isLogin]="isLogin"></app-sidenav>
+      </div>
+      <div class="col-10">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</main>
+<footer></footer>
